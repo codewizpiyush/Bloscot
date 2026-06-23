@@ -15,7 +15,7 @@ function sendMail(email, password) {
     to: email,
     subject: "Verify Your Account",
     html: `
-    <h1>Welcome to BlogWallah</h1>
+    <h1>Welcome to Bloscot</h1>
     <p>Your account has been created successfully.</p>
 
     <p>Please click the button below to verify your account.</p>
