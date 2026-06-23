@@ -1,5 +1,12 @@
 # 🚀 BLOSCOT - Modern Blogging Platform
 
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green?logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-API-black?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+![Render](https://img.shields.io/badge/Render-Deployed-46E3B7?logo=render)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 BLOSCOT is a full-stack blogging platform built using the MERN ecosystem that enables users to create, publish, manage, and interact with blogs through a secure and user-friendly interface.
 
 The platform supports role-based user management, blog publishing workflows, email verification, comment management, and content administration, providing a complete blogging experience for both readers and content creators.
