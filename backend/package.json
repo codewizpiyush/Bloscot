@@ -7,7 +7,11 @@
     "start": "node app.js",
     "dev": "nodemon --exec babel-node"
   },
-  "keywords": ["blogs", "bloscot", "blogapp" ],
+  "keywords": [
+    "blogs",
+    "bloscot",
+    "blogapp"
+  ],
   "author": "Piyush Gupta",
   "license": "ISC",
   "description": "A Blog application inspired by blogger, medium",
@@ -29,7 +33,8 @@
     "mongoose": "^8.12.1",
     "mongoose-unique-validator": "^5.0.0",
     "nodemailer": "^6.10.0",
-    "randomstring": "^1.3.1"
+    "randomstring": "^1.3.1",
+    "resend": "^6.14.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

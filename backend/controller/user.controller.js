@@ -19,7 +19,7 @@ export const save =async(req,res)=>{
 //    console.log(userDetail);
   try{
     var user= await userSchemaModel.create(userDetail);
-    sendMail(user.email,user.password)
+    sendMail(user.email)
     res.status(201).json({"status":true});
   }
   catch(err)
