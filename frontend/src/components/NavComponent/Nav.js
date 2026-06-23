@@ -18,7 +18,7 @@ function Nav() {
    useEffect(()=>{
       setInterval(()=>{
 
-         if(localStorage.getItem("role")=="admin"){
+         if(localStorage.getItem("role")==="admin"){
             setNavContent(
                <>
                   <div class="header_section">
@@ -56,7 +56,7 @@ function Nav() {
                   </div>
                </>
             );
-         }else if(localStorage.getItem("role")=="user"){
+         }else if(localStorage.getItem("role")==="user"){
             setNavContent(
                <>
                   <div class="header_section">

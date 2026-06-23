@@ -12,7 +12,7 @@ function CpUser() {
     
     const handleSubmit =()=>{
         axios.get(__userapiurl+"fetch?email="+localStorage.getItem('email')+"&password="+opass).then((response)=>{
-            if(npass==cnpass)
+            if(npass===cnpass)
             {
                 let updateDetail= {"condition_obj":{"email":localStorage.getItem('email')},"content_obj":{"password":npass}};
                 axios.patch(__userapiurl+"update",updateDetail).then((response)=>{

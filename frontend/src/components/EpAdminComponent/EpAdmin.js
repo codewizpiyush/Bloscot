@@ -24,7 +24,7 @@ function EpAdmin() {
       setMobile(userDetail.mobile);
       setCity(userDetail.city);
       setAdd(userDetail.address);
-      if(userDetail.gender=="male")
+      if(userDetail.gender==="male")
        setM("checked");
       else
        setF("checked");

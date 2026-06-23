@@ -22,9 +22,9 @@ function Footer() {
             <div class="contact_menu">
                <ul>
                   <li><a><img src="./assets/images/call-icon.png"/></a></li>
-                  <li><a>Call : +01 1234567890</a></li>
+                  <li><a>Call : +91 9179006171</a></li>
                   <li><a ><img src="./assets/images/mail-icon.png"/></a></li>
-                  <li><a>demo@gmail.com</a></li>
+                  <li><a>work.with.piyush.gupta@gmail.com</a></li>
                </ul>
             </div>
          </div>
@@ -33,7 +33,7 @@ function Footer() {
       {/* copyright section start */}
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">Copyright 2024 All Right Reserved By.<a> Team CDGI</a></p>
+            <p class="copyright_text">Copyright 2026 All Right Reserved By.<a> Team CodeWizard</a></p>
          </div>
       </div>
       {/* copyright section end */}

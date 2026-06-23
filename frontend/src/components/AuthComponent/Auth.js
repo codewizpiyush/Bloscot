@@ -7,21 +7,21 @@ function Auth()
 
     useEffect(()=>{
      var path=window.location.pathname;
-     if(path=="/admin")
+     if(path==="/admin")
      {
-      if(!localStorage.getItem("token") || localStorage.getItem("role")!="admin")  //ye true jb dega jb token set nahi hoga 
+      if(!localStorage.getItem("token") || localStorage.getItem("role")!=="admin")  //ye true jb dega jb token set nahi hoga 
         navigate("/logout")
      }
-     else if(path=="/user")
+     else if(path==="/user")
      {
-      if(!localStorage.getItem("token") || localStorage.getItem("role")!="user")   
+      if(!localStorage.getItem("token") || localStorage.getItem("role")!=="user")   
         navigate("/logout");
      }
      else
      {
-        if(localStorage.getItem("role")=="admin")            
+        if(localStorage.getItem("role")==="admin")            
             navigate("/admin");
-        else if(localStorage.getItem("role")=="user")
+        else if(localStorage.getItem("role")==="user")
             navigate("/user");
         else
             navigate("/");    

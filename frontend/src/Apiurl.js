@@ -1,5 +1,7 @@
-export const __userapiurl="http://localhost:3001/user/";
-export const apiurlBlog="http://localhost:3001/addblog/";
-export const __Blogapiurl="http://localhost:3001/blog/";
-export const __ViewBlogapiurl="http://localhost:3001/blog/";
-export const __ViewCommentapiurl="http://localhost:3001/api/comments/";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+
+export const __userapiurl = `${BASE_URL}/user/`;
+export const apiurlBlog = `${BASE_URL}/addblog/`;
+export const __Blogapiurl = `${BASE_URL}/blog/`;
+export const __ViewBlogapiurl = `${BASE_URL}/blog/`;
+export const __ViewCommentapiurl = `${BASE_URL}/api/comments/`;

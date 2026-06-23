@@ -110,18 +110,20 @@ function ViewBlog() {
                     </div>
                     {/* Comment code start */}
 
-                    <div className="comment-section mt-3">
+                    <div className="comment-section mt-3 w-[50%]">
                       <h5>Comments</h5>
                       <form onSubmit={(e) => handleCommentSubmit(e, blog._id)}>
-                        <input
-                          type="text"
-                          value={commentInputs[blog._id] || ''}
-                          onChange={(e) => setCommentInputs(prev => ({ ...prev, [blog._id]: e.target.value }))}
-                          placeholder="Add a comment"
-                          required
-                          className="form-control mb-2"
-                        />
-                        <button type="submit" className="btn btn-primary btn-sm">Post</button>
+                        <div className='flex '> 
+                          <input
+                            type="text"
+                            value={commentInputs[blog._id] || ''}
+                            onChange={(e) => setCommentInputs(prev => ({ ...prev, [blog._id]: e.target.value }))}
+                            placeholder="Add a comment"
+                            required
+                            className="form-control mb-2"
+                          />
+                          <button type="submit" className="btn btn-primary btn-sm">Post</button>
+                        </div>
                       </form>
                       <div className="comment-list mt-2">
                         {(comments[blog._id] || []).map((c, i) => (

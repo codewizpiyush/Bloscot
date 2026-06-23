@@ -19,7 +19,7 @@ function ManageUser() {
 
     })
     const changStatus =(_id,s)=>{
-      if(s=='verify')
+      if(s==='verify')
       {
           let updateDetails={"condition_obj":{"_id":_id},"content_obj":{"status":1}}; 
           axios.patch(__userapiurl+"update",updateDetails).then((response)=>{
@@ -30,7 +30,7 @@ function ManageUser() {
           })
      
       }
-      else if(s=='block')
+      else if(s==='block')
       {
           let updateDetails={"condition_obj":{"_id":_id},"content_obj":{"status":0}}; 
           axios.patch(__userapiurl+"update",updateDetails).then((response)=>{
@@ -87,10 +87,10 @@ function ManageUser() {
                           <td>{row.role}</td>
                           <td>
                             {
-                               row.status==0 && <a style= {{"color":"green"}} onClick={()=>{changStatus(row._id,'verify')}}>verify user</a>
+                               row.status===0 && <a style= {{"color":"green"}} onClick={()=>{changStatus(row._id,'verify')}}>verify user</a>
                             }
                             {
-                               row.status==1 && <a style= {{"color":"orange"}} onClick={()=>{changStatus(row._id,'block')}}>Block user</a>
+                               row.status===1 && <a style= {{"color":"orange"}} onClick={()=>{changStatus(row._id,'block')}}>Block user</a>
                             }
                           </td>
                             <td>

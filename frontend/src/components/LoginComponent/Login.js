@@ -10,9 +10,9 @@ function Login() {
   const [password, setPassword] = useState();
   const [output, setOutput] = useState();
   const handleSubmit = () => {
-    if (email == "") {
+    if (email === "") {
       setOutput("Email is required");
-    } else if (password == "") {
+    } else if (password === "") {
       setOutput("Password is required");
     } else {
       const userDetail = { email: email, password: password };
@@ -42,7 +42,7 @@ function Login() {
           // but msg show krke ky kroge direct navigate kr do
           // (user.role=="admin")?setOutput("login as a user"):setOutput("login as a admin");
           //  (user.role=="admin")?navigate("/admin"):navigate("/user");
-          (user.role=="admin")?navigate("/admin"):navigate("/viewblog")
+          (user.role==="admin")?navigate("/admin"):navigate("/viewblog")
         })
         .catch((error) => {
           // console.log(error)

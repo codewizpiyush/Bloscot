@@ -11,7 +11,7 @@ export const save =async(req,res)=>{
  // console.log(userList);
     var len=userList.length;
     //console.log(len);
-  var _id=(len==0)?1:userList[len-1]._id+1;
+  var _id=(len===0)?1:userList[len-1]._id+1;
   //console.log(_id);
   var userDetail = req.body;
     //console.log(userDetail);
@@ -36,7 +36,7 @@ export const fetch=async(req,res)=>{
         //console.log(condition_obj);
         var user=await userSchemaModel.find(condition_obj);
         //console.log(user);
-        if(user.length!=0)
+        if(user.length!==0)
         {
             res.status(200).json(user);
         }
@@ -95,7 +95,7 @@ export const fetch=async(req,res)=>{
         //console.log(condition_obj);
         var user=await userSchemaModel.find(condition_obj);
         //console.log(user);
-       if(user.length!=0)
+       if(user.length!==0)
        {
             const payload ={"subject":user[0].email};
             const key=rs.generate();

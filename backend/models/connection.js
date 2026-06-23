@@ -1,7 +1,14 @@
 import mongoose from "mongoose";
 
-const url = "mongodb://localhost:27017/blogapp";
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URL);
 
-mongoose.connect(url);
+    console.log("MongoDB Connected");
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+};
 
-console.log("Database connected successfully");
+export default connectDB;

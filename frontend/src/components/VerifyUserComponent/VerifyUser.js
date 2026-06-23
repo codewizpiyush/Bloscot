@@ -10,7 +10,7 @@ function Verifyuser()
     const params = useParams(); 
     useEffect(()=>{
      axios.get(__userapiurl+"fetch?email="+params.email).then((response)=>{
-        if(response.data[0].__v==0)
+        if(response.data[0].__v===0)
         {
             
             var updateDetails={"condition_obj":{"email":params.email},"content_obj":{"status":1,"__v":1}}; 
