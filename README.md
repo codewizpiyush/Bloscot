@@ -235,6 +235,16 @@ REACT_APP_BASE_URL=
 * System Architecture
 * Deployment & Integration
 
+  
+### Kunal Dhote
+
+**Frontend & Database Developer**
+
+* Frontend Development
+* Database Design
+* Data Management
+
+  
 ### Rupal Bagora
 
 **Full Stack Developer**
@@ -244,13 +254,7 @@ REACT_APP_BASE_URL=
 * Feature Development
 * Business Logic Implementation
 
-### Kunal Dhote
 
-**Frontend & Database Developer**
-
-* Frontend Development
-* Database Design
-* Data Management
 
 ### Anuj Singh Gurjar
 
