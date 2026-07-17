@@ -10,17 +10,6 @@ catnm , caticonnm
 
 -----------------------------------------------------------
 
--> fetch api link
-
-url : http://localhost:3001/category/fetch/
-method : get
-
-data : query string must be attached to find specific data
-
-fields : key 
-value : data to be fetched
-
-------------------------------------------------------
 
 * to delete record from database
 
@@ -30,6 +19,18 @@ method : delete
 data attached : if required condition object (url params or body)
 
 response : json
+
+------------------------------------------------------
+
+-> fetch api link
+
+url : http://localhost:3001/category/fetch/
+method : get
+
+data : query string must be attached to find specific data
+
+fields : key 
+value : data to be fetched
 
 -----------------------------------------------------------
 
